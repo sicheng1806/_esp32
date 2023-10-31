@@ -6,7 +6,7 @@ if __name__ == '__main__':
     #xgzp
     i2c = SoftI2C(scl=Pin(18),sda=Pin(19),freq=400000)
     xgzp = XGZP(i2c)
-    xgzp.setMode(xgzp.CMD_DORMANT_MOD[2])
+    xgzp.setMode(xgzp.CMD_DORMANT_MOD[2])#
     #
     wlan,bol = wlan_wait_connected(ssid='wawu',password='long13044')
 
